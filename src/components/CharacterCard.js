@@ -13,7 +13,7 @@ function CharacterCard (props) {
       <Card.Content>
         <Card.Header>{props.tileData.name}</Card.Header>
         <Card.Meta>
-          <span className='date'>{props.tileData.species}-{props.tileData.status}</span>
+          <span className='date'>{props.tileData.species} - {props.tileData.status}</span>
         </Card.Meta>
         <Card.Meta>
           <span className='date'>Type:{props.tileData.type}</span>
