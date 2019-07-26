@@ -16,7 +16,7 @@ function EpisodeCard (props) {
         </Card.Meta>
         {/* Also need length of the character array!!! */}
         <Card.Meta>
-          <span className='date'>Characters:{props.tileData.characters}</span>
+          <span className='date'>Characters:{props.tileData.characters.length}</span>
         </Card.Meta>
        
       </Card.Content>

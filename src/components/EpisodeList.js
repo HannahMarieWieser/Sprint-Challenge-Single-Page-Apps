@@ -10,7 +10,7 @@ export default function EpisodeList() {
     //  Important: verify the 2nd `useEffect` parameter: the dependancies array!
 
     Axios
-      .get(`https://rickandmortyapi.com/api/character/`)
+      .get(`https://rickandmortyapi.com/api/episode/`)
       .then(response => {
         setEpisode(response.data.results);
       })
