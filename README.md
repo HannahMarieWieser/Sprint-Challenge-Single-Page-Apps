@@ -24,14 +24,17 @@ In this challenge, you will create a Single Page Application complete with Clien
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question.
 
-- [ ] Explain benefit(s) using `client-side routing`?
-> Answer:
-- [ ] What does AJAX stand for?
-> Answer:
-- [ ] What are `controlled components` in React?
-> Answer:
-- [ ] Name three tools/libraries for making AJAX requests.
-> Answer:
+- [x] Explain benefit(s) using `client-side routing`?
+> Answer: The benefit of client-side routing is that the whole page won't refresh, only the elements being interacted with. The routing between different views is also faster because less data is processed, and animations and transitons are easier to implement.  
+
+- [x] What does AJAX stand for?
+> Answer: AJAX stands for Asynchronous Javascript And XML, and is a way for webpages to be updated asynchronously.
+
+- [x] What are `controlled components` in React?
+> Answer: A controlled component is one that takes a value through props and then changes through callbacks such as onChange. The 'controlled' portion of the name comes from the parent component controlling the callbacks, managing state, and props. 
+
+- [x] Name three tools/libraries for making AJAX requests.
+> Answer: Axios, jQuery, and Fetch API are all popular methods for AJAX requests. 
 
 
 ## Project Set Up
@@ -95,7 +98,7 @@ Add a Router to this application by using [React Router](https://reacttraining.c
 - [x] In your `App` component, add a [tab bar](https://react.semantic-ui.com/modules/tab/#types-basic) that will use React Routers `NavLink` components to link to your different pages.
 - [x] Make sure to use `<Link>` component instead of `<a>` elements.
 
-- [ ] **Make sure all tasks are complete:** Do a global search (Cmd-Shift-F in VS Code) for the string `TODO:`.
+- [x] **Make sure all tasks are complete:** Do a global search (Cmd-Shift-F in VS Code) for the string `TODO:`.
 
 > 💡**reminder:** `git commit -am 'MVP Completed'`
 
