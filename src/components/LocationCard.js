@@ -10,17 +10,14 @@ export default function LocationCard (props) {
       <Card.Content>
         <Card.Header>{props.tileData.name}</Card.Header>
         <Card.Meta>
-          <span className='date'>{props.tileData.type}</span>
+          <span className='date'>Type: {props.tileData.type}</span>
         </Card.Meta>
         <Card.Meta>
-          <span className='date'>Type:{props.tileData.type}</span>
-        </Card.Meta>
-        <Card.Meta>
-          <span className='date'>Dimension:{props.tileData.dimension}</span>
+          <span className='date'>Dimension: {props.tileData.dimension}</span>
         </Card.Meta> 
         {/* need to check how to get length of array of prop */} 
         <Card.Meta>
-          <span className='date'>Residents:{props.tileData.residents.length}</span>
+          <span className='date'>Residents: {props.tileData.residents.length}</span>
         </Card.Meta>  
       </Card.Content>
     </Card>

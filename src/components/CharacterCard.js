@@ -16,13 +16,13 @@ function CharacterCard (props) {
           <span className='date'>{props.tileData.species} - {props.tileData.status}</span>
         </Card.Meta>
         <Card.Meta>
-          <span className='date'>Type:{props.tileData.type}</span>
+          <span className='date'>Type: {props.tileData.type}</span>
         </Card.Meta>
         <Card.Meta>
-          <span className='date'>Origin:{props.tileData.origin.name}</span>
+          <span className='date'>Origin: {props.tileData.origin.name}</span>
         </Card.Meta>  
         <Card.Meta>
-          <span className='date'>Location:{props.tileData.location.name}</span>
+          <span className='date'>Location: {props.tileData.location.name}</span>
         </Card.Meta>  
       </Card.Content>
     </Card>

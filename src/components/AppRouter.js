@@ -12,7 +12,6 @@ export default function AppRouter() {
       <Route path='/locations' component={LocationsList} />
       <Route path='/episodes' component={EpisodeList} />
       <Route component={WelcomePage} />
-      {/* <Route path="/episodes" component={} /> */}
     </Switch>
   </div>
 
