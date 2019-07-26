@@ -17,7 +17,8 @@ export default function LocationCard (props) {
         </Card.Meta>
         <Card.Meta>
           <span className='date'>Dimension:{props.tileData.dimension}</span>
-        </Card.Meta>  
+        </Card.Meta> 
+        {/* need to check how to get length of array of prop */} 
         <Card.Meta>
           <span className='date'>Residents:{props.tileData.residents.length}</span>
         </Card.Meta>  

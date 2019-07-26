@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import Axios from 'axios';
-import CharacterCard from "./CharacterCard"
+import EpisodeCard from "./EpisodeCard"
 
-export default function CharacterList() {
-  const [character, setCharacter] = useState();
+export default function EpisodeList() {
+  const [episode, setEpisode] = useState();
 
   useEffect(() => {
     // TODO: Add AJAX/API Request here - must run in `useEffect`
@@ -12,7 +12,7 @@ export default function CharacterList() {
     Axios
       .get(`https://rickandmortyapi.com/api/character/`)
       .then(response => {
-        setCharacter(response.data.results);
+        setEpisode(response.data.results);
       })
       .catch(error => {
         console.error(error);
@@ -21,19 +21,19 @@ export default function CharacterList() {
 
 
   }, [])
-  // console.log("character", character)
+//   console.log("episode", episode)
 
-  if (!character){
-    return <div>Loading character information...</div>
+  if (!episode){
+    return <div>Loading episode information...</div>
   }
 
   else{
-    return <section className='character-list grid-view'>
+    return <section className='episode-list grid-view'>
 
       <h2>
-
-        {character.map((oneperson) => 
-          <CharacterCard tileData = {oneperson}/> 
+        
+        {episode.map((oneepisode) => 
+          <EpisodeCard tileData = {oneepisode}/> 
         )}
 
       </h2>

@@ -3,7 +3,7 @@ import Axios from 'axios';
 import LocationCard from "./LocationCard"
 
 export default function LocationsList() {
-  const [location, setlocation] = useState({});
+  const [location, setlocation] = useState();
 
   useEffect(() => {
     // TODO: Add AJAX/API Request here - must run in `useEffect`
