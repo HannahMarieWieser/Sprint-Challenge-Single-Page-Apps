@@ -3,7 +3,7 @@ import { Card, Icon, Image } from 'semantic-ui-react'
 
 //if problem return braces around props
 
-function CharacterCard ({props}) {
+function CharacterCard (props) {
   console.log("charactercard props", props)
 
   return(
@@ -19,7 +19,10 @@ function CharacterCard ({props}) {
           <span className='date'>Type:{props.tileData.type}</span>
         </Card.Meta>
         <Card.Meta>
-          <span className='date'>Origin:{props.tileData.origin}</span>
+          <span className='date'>Origin:{props.tileData.origin.name}</span>
+        </Card.Meta>  
+        <Card.Meta>
+          <span className='date'>Location:{props.tileData.location.name}</span>
         </Card.Meta>  
       </Card.Content>
     </Card>
