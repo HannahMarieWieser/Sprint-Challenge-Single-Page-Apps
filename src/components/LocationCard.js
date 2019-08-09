@@ -1,7 +1,26 @@
 import React from 'react'
+import { Card, Icon, Image } from 'semantic-ui-react'
 
-export default function LocationCard ({ name, type, dimension, residents }) {
+export default function LocationCard (props) {
   // image={image}
-  return (<span>todo: location</span>
+  return(
+
+    <Card>
+      <Image src={props.tileData.image} wrapped ui={false} />
+      <Card.Content>
+        <Card.Header>{props.tileData.name}</Card.Header>
+        <Card.Meta>
+          <span className='date'>Type: {props.tileData.type}</span>
+        </Card.Meta>
+        <Card.Meta>
+          <span className='date'>Dimension: {props.tileData.dimension}</span>
+        </Card.Meta> 
+        {/* need to check how to get length of array of prop */} 
+        <Card.Meta>
+          <span className='date'>Residents: {props.tileData.residents.length}</span>
+        </Card.Meta>  
+      </Card.Content>
+    </Card>
+
   )
 }
